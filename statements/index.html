@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Screening Statements - BIOS Hackathon</title>
+    <meta name="theme-color" content="#efdccb" />
+    <meta name="color-scheme" content="light" /><link rel="preload" href="/static/theme/fonts/jost-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/static/theme/fonts/cormorant-garamond-latin-300-normal.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="/static/theme/css/tokens.css?v=9e682be5a4" />
+    <link rel="stylesheet" href="/static/theme/css/base.css?v=9e682be5a4" />
+    <link rel="stylesheet" href="/static/theme/css/components.css?v=9e682be5a4" />
+    <link rel="stylesheet" href="/static/theme/css/worlds.css?v=9e682be5a4" />
+    <link rel="stylesheet" href="/static/theme/css/pages.css?v=9e682be5a4" />
+    <link rel="icon" href="/static/theme/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/static/favicon_io/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon_io/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/static/favicon_io/favicon-16x16.png" />
+    <link rel="manifest" href="/static/favicon_io/site.webmanifest" />
+    <script src="/static/theme/js/app.js?v=9e682be5a4" defer></script>
+
+</head>
+
+<body class="world-public page-statements" data-oversize-message="{label} exceeds the {mb} MB limit. Choose a smaller file; the rest of your form has been preserved.">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <svg class="sprite" width="0" height="0" aria-hidden="true" focusable="false">
+  <defs>
+    <path id="g-B" fill="none" d="M708.8 194.3H673.6V294.3H712.2A26.8 26.8 0 0 0 712.2 240.7H673.6M708.8 194.3A23.2 23.2 0 0 1 708.8 240.7"/>
+    <path id="g-I" fill="none" d="M762 194.3V294.3"/>
+    <path id="g-S" fill="none" d="M972.76 200.94C967.54 197.8 962.44 194.78 956.45 193.36C938.95 189.18 913.87 195.59 915.1 217.91C916.69 246.69 965.3 235.99 974.23 260.32C980.58 277.62 967.07 292.14 950.68 294.97C936.23 297.46 922.85 292.36 910.96 284.54"/>
+    <clipPath id="lg-half" clipPathUnits="userSpaceOnUse"><path d="M836.7 188.9A55.7 55.7 0 0 1 836.7 300.3Z"/></clipPath>
+    <radialGradient id="lg-bead" cx=".42" cy=".38" r=".7">
+      <stop offset="0" stop-color="#f1d08e"/>
+      <stop offset=".55" stop-color="#d49a45"/>
+      <stop offset="1" stop-color="#a86d22"/>
+    </radialGradient>
+    <symbol id="bios-logo" viewBox="664 164 322 162">
+      <image class="lg-fill" href="/static/theme/art/o-fill.webp" x="779.2" y="187.1" width="115" height="115" preserveAspectRatio="none" clip-path="url(#lg-half)"/>
+      <path class="lg-line" fill="none" stroke="#b0793a" stroke-width="1.6" stroke-opacity=".72" d="M836.7 167V323"/>
+      <use class="lg-glyph" href="#g-B" stroke="#16120f" stroke-width="2.6" stroke-linejoin="miter" stroke-miterlimit="8"/>
+      <use class="lg-glyph" href="#g-I" stroke="#16120f" stroke-width="2.6" stroke-linejoin="miter" stroke-miterlimit="8"/>
+      <circle class="lg-glyph" fill="none" stroke="#16120f" stroke-width="2.6" stroke-linejoin="miter" stroke-miterlimit="8" cx="836.7" cy="244.6" r="56.8"/>
+      <use class="lg-glyph" href="#g-S" stroke="#16120f" stroke-width="2.6" stroke-linejoin="miter" stroke-miterlimit="8"/>
+      <circle class="lg-bead" fill="url(#lg-bead)" cx="836.7" cy="244.6" r="6.6"/>
+    </symbol>
+    <symbol id="o-art" viewBox="772 164 129.4 162">
+      <image class="lg-fill" href="/static/theme/art/o-fill.webp" x="779.2" y="187.1" width="115" height="115" preserveAspectRatio="none" clip-path="url(#lg-half)"/>
+      <path class="lg-line" fill="none" stroke="#b0793a" stroke-width="1.6" stroke-opacity=".72" d="M836.7 167V323"/>
+      <circle class="lg-glyph" fill="none" stroke="#16120f" stroke-width="2.6" stroke-linejoin="miter" stroke-miterlimit="8" cx="836.7" cy="244.6" r="56.8"/>
+      <circle class="lg-bead" fill="url(#lg-bead)" cx="836.7" cy="244.6" r="6.6"/>
+    </symbol>
+    <symbol id="o-mini" viewBox="-62 -62 124 124">
+      <path class="o-mini__fill" d="M0-55.7A55.7 55.7 0 0 1 0 55.7Z"/>
+      <circle class="o-mini__ring" r="56.8"/>
+      <path class="o-mini__axis" d="M0-56.8V56.8"/>
+      <circle class="o-mini__dot" r="7"/>
+    </symbol>
+    <symbol id="o-mode" viewBox="-62 -62 124 124">
+      <path class="o-mode__left" d="M0-55.7A55.7 55.7 0 0 0 0 55.7Z"/>
+      <path class="o-mode__right" d="M0-55.7A55.7 55.7 0 0 1 0 55.7Z"/>
+      <circle class="o-mode__ring" r="56.8"/>
+      <path class="o-mode__axis" d="M0-56.8V56.8"/>
+    </symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+  </defs>
+</svg>
+    <header class="site-header">
+  <div class="site-header__bar">
+    <a class="brand" href="/">
+      <svg class="brand__logo" viewBox="0 0 322 162" width="99" height="50" role="img" aria-label="BIOS Hackathon, home" focusable="false"><use href="#bios-logo" width="322" height="162"/></svg>
+      <span class="brand__sub">Bringing Innovation<br>On-Stage</span>
+    </a>
+    <nav class="nav-primary" aria-label="Primary">
+      <ul>
+
+        <li><a class="nav-link" href="/">Home</a></li>
+
+        <li><a class="nav-link" href="/tracks">Tracks</a></li>
+
+        <li><a class="nav-link" href="/guide">Guide</a></li>
+
+        <li><a class="nav-link" href="/announcements">Announcements</a></li>
+
+        <li><a class="nav-link" href="/sponsors">Sponsors</a></li>
+
+        <li><a class="nav-link" href="/history">BIOS 25</a></li>
+
+      </ul>
+    </nav>
+    <div class="nav-actions">
+
+      <a class="btn btn--primary btn--sm nav-login" href="/signin?next=/dashboard">Login</a>
+
+      <button id="mobile-menu-button" class="nav-toggle nav-toggle--guest" type="button" aria-controls="mobile-menu" aria-expanded="false">
+        <span class="nav-toggle__icon" aria-hidden="true"><span></span></span><span class="nav-toggle__label">Menu</span>
+      </button>
+      <nav id="mobile-menu" class="nav-menu hidden" aria-label="Pages">
+        <div class="nav-menu__group nav-menu__group--pages">
+          <p class="nav-menu__title">Explore</p>
+          <ul>
+
+            <li style="--i: 0"><a class="nav-menu__link" href="/">Home</a></li>
+
+            <li style="--i: 1"><a class="nav-menu__link" href="/tracks">Tracks</a></li>
+
+            <li style="--i: 2"><a class="nav-menu__link" href="/guide">Guide</a></li>
+
+            <li style="--i: 3"><a class="nav-menu__link" href="/announcements">Announcements</a></li>
+
+            <li style="--i: 4"><a class="nav-menu__link" href="/sponsors">Sponsors</a></li>
+
+            <li style="--i: 5"><a class="nav-menu__link" href="/history">BIOS 25</a></li>
+
+          </ul>
+        </div>
+
+      </nav>
+    </div>
+  </div>
+</header>
+
+    <main id="main-content" class="app-main" tabindex="-1">
+
+<div class="page shell shell--wide guide">
+  <header class="page-head">
+  <div class="page-head__text">
+
+    <p class="eyebrow"><svg class="eyebrow__o" aria-hidden="true" focusable="false"><use href="#o-mini"/></svg><span>Public catalogue</span></p>
+    <h1>Screening statements</h1>
+    <p class="lede">Choose one statement from your team’s mode. Submit the completed official presentation through the Screening round on your dashboard.</p>
+    <div class="page-head__actions">
+
+      <a class="btn btn--primary" href="/signin?next=/dashboard">Sign in to participate</a>
+
+    <a class="btn btn--secondary" href="/guide#screening">How screening works</a>
+  </div>
+  </div>
+</header>
+
+
+  <div class="public-catalogue" aria-label="Screening statements by participation mode">
+
+
+    <section class="public-catalogue__group world-seed" id="init" aria-labelledby="statements-init">
+      <header>
+        <div><span class="mode-badge mode-badge--seed"><svg class="mode-badge__o" aria-hidden="true" focusable="false"><use href="#o-mode"/></svg>SEED</span><h2 id="statements-init">SEED</h2></div>
+        <p>School students working on SDG-focused ideas with support from an approved school SPOC.</p>
+        <p><a class="btn btn--secondary btn--sm" href="/static/downloads/BIOS_V2_SEED_Screening_Template.pptx" download>Download SEED submission template</a></p>
+      </header>
+
+        <ol class="problem-list" aria-label="SEED screening statements problem statements">
+
+  <li class="problem-list__item">
+    <details class="disclosure problem-list__entry">
+      <summary><span class="problem-list__n" aria-hidden="true">01</span><span class="problem-list__name">Is Your Water Really Safe?</span></summary>
+      <div class="disclosure__body problem-list__body">
+        <p class="problem-list__text">SDG 6: Clean Water and Sanitation; SDG 12: Responsible Consumption. Your school has five water sources, but nobody knows which ones are safe. Measure the pH of each source, identify one that may need treatment, and propose a low-cost correction using a substance such as lime or washing soda. Include the balanced chemical equation.</p>
+
+        <p class="problem-list__label">Expected outcome</p>
+        <p class="problem-list__text">A practical water-treatment proposal supported by pH readings and a balanced chemical equation.</p>
+
+
+      </div>
+    </details>
+  </li>
+
+  <li class="problem-list__item">
+    <details class="disclosure problem-list__entry">
+      <summary><span class="problem-list__n" aria-hidden="true">02</span><span class="problem-list__name">Keeping Vaccines Cold Without Electricity</span></summary>
+      <div class="disclosure__body problem-list__body">
+        <p class="problem-list__text">SDG 7: Affordable and Clean Energy. A health worker must keep vaccines cold where electricity, batteries, solar panels and generators are unavailable. Use evaporation, latent heat and insulation to design a safe cooling system.</p>
+
+        <p class="problem-list__label">Expected outcome</p>
+        <p class="problem-list__text">A scientifically accurate cooling design with materials, operating steps and temperature-safety reasoning.</p>
+
+
+      </div>
+    </details>
+  </li>
+
+  <li class="problem-list__item">
+    <details class="disclosure problem-list__entry">
+      <summary><span class="problem-list__n" aria-hidden="true">03</span><span class="problem-list__name">When Planting Trees Creates a Problem</span></summary>
+      <div class="disclosure__body problem-list__body">
+        <p class="problem-list__text">SDG 15: Life on Land. A tree-plantation drive used species that did not suit the local soil and climate. Explain the ecological mistakes and design a correction plan based on ecosystems, biodiversity, soil and geography.</p>
+
+        <p class="problem-list__label">Expected outcome</p>
+        <p class="problem-list__text">A recovery plan that identifies the overlooked ecological factors and justifies suitable species and actions.</p>
+
+
+      </div>
+    </details>
+  </li>
+
+  <li class="problem-list__item">
+    <details class="disclosure problem-list__entry">
+      <summary><span class="problem-list__n" aria-hidden="true">04</span><span class="problem-list__name">Would You Change Your Farming Method?</span></summary>
+      <div class="disclosure__body problem-list__body">
+        <p class="problem-list__text">SDG 2: Zero Hunger. A farmer is not convinced about methods such as drip irrigation or crop rotation. State the three strongest economic, practical or cultural objections, then answer each with a realistic solution.</p>
+
+        <p class="problem-list__label">Expected outcome</p>
+        <p class="problem-list__text">Three credible objections and practical responses that make a sustainable method workable for the farmer.</p>
+
+
+      </div>
+    </details>
+  </li>
+
+  <li class="problem-list__item">
+    <details class="disclosure problem-list__entry">
+      <summary><span class="problem-list__n" aria-hidden="true">05</span><span class="problem-list__name">The First 60 Seconds</span></summary>
+      <div class="disclosure__body problem-list__body">
+        <p class="problem-list__text">SDG 3: Good Health and Well-being. Someone nearby develops a severe allergic reaction and the nearest hospital is 40 minutes away. Describe the safest actions a bystander should take in the first 60 seconds using accurate Biology and Chemistry.</p>
+
+        <p class="problem-list__label">Expected outcome</p>
+        <p class="problem-list__text">A safety-first response plan that avoids harmful improvisation and explains the science behind each action.</p>
+
+
+      </div>
+    </details>
+  </li>
+
+  <li class="problem-list__item">
+    <details class="disclosure problem-list__entry">
+      <summary><span class="problem-list__n" aria-hidden="true">06</span><span class="problem-list__name">The Solar Panels Nobody Uses</span></summary>
+      <div class="disclosure__body problem-list__body">
+        <p class="problem-list__text">SDG 7: Affordable and Clean Energy. A village received free solar panels, but many are now broken, unused or stored away. Investigate maintenance, ownership, suitability, repairs and responsibility, then address the root cause.</p>
+
+        <p class="problem-list__label">Expected outcome</p>
+        <p class="problem-list__text">A sustainable operating and maintenance plan that explains why the original deployment failed.</p>
+
+
+      </div>
+    </details>
+  </li>
+
+  <li class="problem-list__item">
+    <details class="disclosure problem-list__entry">
+      <summary><span class="problem-list__n" aria-hidden="true">07</span><span class="problem-list__name">Who Gets the Last Dose?</span></summary>
+      <div class="disclosure__body problem-list__body">
+        <p class="problem-list__text">SDG 3: Good Health and Well-being; SDG 10: Reduced Inequalities. One hundred treatment doses are available for 300 people. Design a fair allocation system, explain how it works, and defend it against the two strongest objections.</p>
+
+        <p class="problem-list__label">Expected outcome</p>
+        <p class="problem-list__text">A clear allocation rule that can be applied consistently and defended on practical and ethical grounds.</p>
+
+
+      </div>
+    </details>
+  </li>
+
+  <li class="problem-list__item">
+    <details class="disclosure problem-list__entry">
+      <summary><span class="problem-list__n" aria-hidden="true">08</span><span class="problem-list__name">Teaching What Cannot Be Said</span></summary>
+      <div class="disclosure__body problem-list__body">
+        <p class="problem-list__text">SDG 4: Quality Education. A school wants comprehensive health and hygiene education, but some parents object to certain topics. Design a curriculum that achieves the health outcome while addressing community concerns.</p>
+
+        <p class="problem-list__label">Expected outcome</p>
+        <p class="problem-list__text">A curriculum and communication plan that balances scientific accuracy, student health and community context.</p>
+
+
+      </div>
+    </details>
+  </li>
+
+  <li class="problem-list__item">
+    <details class="disclosure problem-list__entry">
+      <summary><span class="problem-list__n" aria-hidden="true">09</span><span class="problem-list__name">One River. Three Needs. One Drought.</span></summary>
+      <div class="disclosure__body problem-list__body">
+        <p class="problem-list__text">SDG 6: Clean Water; SDG 7: Clean Energy; SDG 2: Zero Hunger. A river supplies farms, drinking water and a hydropower plant during a severe drought. Create a reusable allocation rule and test it against the claims of each stakeholder.</p>
+
+        <p class="problem-list__label">Expected outcome</p>
+        <p class="problem-list__text">A repeatable allocation rule with priorities, thresholds and a reasoned response to each stakeholder.</p>
+
+
+      </div>
+    </details>
+  </li>
+
+  <li class="problem-list__item">
+    <details class="disclosure problem-list__entry">
+      <summary><span class="problem-list__n" aria-hidden="true">10</span><span class="problem-list__name">The Girl Who Stopped Coming to School</span></summary>
+      <div class="disclosure__body problem-list__body">
+        <p class="problem-list__text">SDG 4: Quality Education; SDG 5: Gender Equality. Girls leave secondary school around age 14 even though distance, cost and safety have been addressed. Identify the most likely hidden barrier and design a focused response.</p>
+
+        <p class="problem-list__label">Expected outcome</p>
+        <p class="problem-list__text">An evidence-based explanation of the hidden barrier and a solution that targets it directly.</p>
+
+
+      </div>
+    </details>
+  </li>
+
+</ol>
+
+    </section>
+
+
+    <section class="public-catalogue__group world-core" id="basic" aria-labelledby="statements-basic">
+      <header>
+        <div><span class="mode-badge mode-badge--core"><svg class="mode-badge__o" aria-hidden="true" focusable="false"><use href="#o-mode"/></svg>CORE</span><h2 id="statements-basic">CORE</h2></div>
+        <p>First-time and emerging builders looking for a structured, accessible challenge.</p>
+        <p><a class="btn btn--secondary btn--sm" href="/static/downloads/BIOS_V2_CORE_FRONTIER_Screening_Template.pptx" download>Download CORE submission template</a></p>
+      </header>
+
+        <ol class="problem-list" aria-label="CORE screening statements problem statements">
+
+  <li class="problem-list__item">
+    <details class="disclosure problem-list__entry">
+      <summary><span class="problem-list__n" aria-hidden="true">01</span><span class="problem-list__name">Surplus Food Redistribution Platform</span></summary>
+      <div class="disclosure__body problem-list__body">
+        <p class="problem-list__text">Build a platform that connects college canteens, hostels, restaurants and events with verified organisations that can collect surplus food. Donors list food, quantity and pickup time. Recipients claim what they need.</p>
+
+        <p class="problem-list__label">Expected outcome</p>
+        <p class="problem-list__text">A working platform with verified recipients, live quantity tracking and automatic expiry of stale claims.</p>
+
+
+      </div>
+    </details>
+  </li>
+
+  <li class="problem-list__item">
+    <details class="disclosure problem-list__entry">
+      <summary><span class="problem-list__n" aria-hidden="true">02</span><span class="problem-list__name">Financial Literacy and Personal Budgeting Assistant</span></summary>
+      <div class="disclosure__body problem-list__body">
+        <p class="problem-list__text">Build a platform that teaches saving, budgeting, loans and responsible spending while helping users understand their income and expenses.</p>
+
+        <p class="problem-list__label">Expected outcome</p>
+        <p class="problem-list__text">A budgeting tool with personalised guidance that explains financial habits and core financial concepts.</p>
+
+
+      </div>
+    </details>
+  </li>
+
+  <li class="problem-list__item">
+    <details class="disclosure problem-list__entry">
+      <summary><span class="problem-list__n" aria-hidden="true">03</span><span class="problem-list__name">Child Development and Immunisation Support</span></summary>
+      <div class="disclosure__body problem-list__body">
+        <p class="problem-list__text">Build a platform that maintains child records, tracks development milestones and vaccinations, and identifies children who may miss upcoming vaccinations when families migrate or paper records are lost.</p>
+
+        <p class="problem-list__label">Expected outcome</p>
+        <p class="problem-list__text">A health-worker dashboard with child records, milestone tracking, vaccination status and reminders.</p>
+
+
+      </div>
+    </details>
+  </li>
+
+  <li class="problem-list__item">
+    <details class="disclosure problem-list__entry">
+      <summary><span class="problem-list__n" aria-hidden="true">04</span><span class="problem-list__name">Digital Platform for Rural Women Entrepreneurs</span></summary>
+      <div class="disclosure__body problem-list__body">
+        <p class="problem-list__text">Build a simple platform that helps rural women discover relevant business information, training, markets and income opportunities.</p>
+
+        <p class="problem-list__label">Expected outcome</p>
+        <p class="problem-list__text">A mobile-friendly service that connects users with useful business resources, training and opportunities.</p>
+
+
+      </div>
+    </details>
+  </li>
+
+  <li class="problem-list__item">
+    <details class="disclosure problem-list__entry">
+      <summary><span class="problem-list__n" aria-hidden="true">05</span><span class="problem-list__name">Smart Energy Usage and Saving Assistant</span></summary>
+      <div class="disclosure__body problem-list__body">
+        <p class="problem-list__text">Build a platform that analyses electricity use, identifies consumption patterns and suggests practical ways for homes or organisations to reduce usage.</p>
+
+        <p class="problem-list__label">Expected outcome</p>
+        <p class="problem-list__text">A dashboard with usage patterns, forecasts and specific recommendations for reducing consumption.</p>
+
+
+      </div>
+    </details>
+  </li>
+
+  <li class="problem-list__item">
+    <details class="disclosure problem-list__entry">
+      <summary><span class="problem-list__n" aria-hidden="true">06</span><span class="problem-list__name">Detect and Address Student Learning Gaps</span></summary>
+      <div class="disclosure__body problem-list__body">
+        <p class="problem-list__text">Build a platform that analyses multiple student responses, identifies common misconceptions and groups students who need support with the same concept.</p>
+
+        <p class="problem-list__label">Expected outcome</p>
+        <p class="problem-list__text">A teacher dashboard that identifies misconceptions and creates useful intervention groups.</p>
+
+
+      </div>
+    </details>
+  </li>
+
+  <li class="problem-list__item">
+    <details class="disclosure problem-list__entry">
+      <summary><span class="problem-list__n" aria-hidden="true">07</span><span class="problem-list__name">Guided Social-Welfare Application Platform</span></summary>
+      <div class="disclosure__body problem-list__body">
+        <p class="problem-list__text">Build a platform that asks applicants simple questions and creates a personalised checklist for pensions, scholarships or government schemes.</p>
+
+        <p class="problem-list__label">Expected outcome</p>
+        <p class="problem-list__text">A system that explains requirements, lists the required documents and identifies missing information.</p>
+
+
+      </div>
+    </details>
+  </li>
+
+  <li class="problem-list__item">
+    <details class="disclosure problem-list__entry">
+      <summary><span class="problem-list__n" aria-hidden="true">08</span><span class="problem-list__name">Social and AI-Powered Fashion Discovery</span></summary>
+      <div class="disclosure__body problem-list__body">
+        <p class="problem-list__text">Build a fashion discovery platform where users search with natural language or images and receive relevant product and outfit recommendations.</p>
+
+        <p class="problem-list__label">Expected outcome</p>
+        <p class="problem-list__text">A working text and image search experience with useful, personalised recommendations.</p>
+
+
+      </div>
+    </details>
+  </li>
+
+  <li class="problem-list__item">
+    <details class="disclosure problem-list__entry">
+      <summary><span class="problem-list__n" aria-hidden="true">09</span><span class="problem-list__name">Smart NGO Beneficiary Management</span></summary>
+      <div class="disclosure__body problem-list__body">
+        <p class="problem-list__text">Build a platform that helps NGO workers manage beneficiary records, identify urgent cases and match people with suitable support programmes.</p>
+
+        <p class="problem-list__label">Expected outcome</p>
+        <p class="problem-list__text">An NGO dashboard for managing beneficiaries, prioritising cases and matching support programmes.</p>
+
+
+      </div>
+    </details>
+  </li>
+
+</ol>
+
+    </section>
+
+
+    <section class="public-catalogue__group world-frontier" id="overclocked" aria-labelledby="statements-overclocked">
+      <header>
+        <div><span class="mode-badge mode-badge--frontier"><svg class="mode-badge__o" aria-hidden="true" focusable="false"><use href="#o-mode"/></svg>FRONTIER</span><h2 id="statements-overclocked">FRONTIER</h2></div>
+        <p>Experienced teams ready for a more demanding technical and product challenge.</p>
+        <p><a class="btn btn--secondary btn--sm" href="/static/downloads/BIOS_V2_CORE_FRONTIER_Screening_Template.pptx" download>Download FRONTIER submission template</a></p>
+      </header>
+
+        <ol class="problem-list" aria-label="FRONTIER screening statements problem statements">
+
+  <li class="problem-list__item">
+    <details class="disclosure problem-list__entry">
+      <summary><span class="problem-list__n" aria-hidden="true">01</span><span class="problem-list__name">AI-Based Semiconductor Defect Detection</span></summary>
+      <div class="disclosure__body problem-list__body">
+        <p class="problem-list__text">Build a computer-vision system that analyses semiconductor inspection images and identifies defective components.</p>
+
+        <p class="problem-list__label">Expected outcome</p>
+        <p class="problem-list__text">An ML inspection system with measurable detection performance on sample images.</p>
+
+
+      </div>
+    </details>
+  </li>
+
+  <li class="problem-list__item">
+    <details class="disclosure problem-list__entry">
+      <summary><span class="problem-list__n" aria-hidden="true">02</span><span class="problem-list__name">Intelligent Supply-Chain Risk and Route Management</span></summary>
+      <div class="disclosure__body problem-list__body">
+        <p class="problem-list__text">Build a system that detects disruptions caused by traffic, weather, supplier delays or inventory shortages and recommends better routes or actions.</p>
+
+        <p class="problem-list__label">Expected outcome</p>
+        <p class="problem-list__text">A decision-support platform that identifies supply-chain risks and recommends an appropriate response.</p>
+
+
+      </div>
+    </details>
+  </li>
+
+  <li class="problem-list__item">
+    <details class="disclosure problem-list__entry">
+      <summary><span class="problem-list__n" aria-hidden="true">03</span><span class="problem-list__name">Campus Peer-to-Peer Compute Sharing Network</span></summary>
+      <div class="disclosure__body problem-list__body">
+        <p class="problem-list__text">Build a secure campus network where students can contribute or request unused CPU and GPU capacity for approved workloads such as ML training, rendering or simulations.</p>
+
+        <p class="problem-list__label">Expected outcome</p>
+        <p class="problem-list__text">A working multi-machine prototype that distributes approved jobs according to available compute capacity.</p>
+
+
+      </div>
+    </details>
+  </li>
+
+  <li class="problem-list__item">
+    <details class="disclosure problem-list__entry">
+      <summary><span class="problem-list__n" aria-hidden="true">04</span><span class="problem-list__name">Fast and Secure Online Transaction Authentication</span></summary>
+      <div class="disclosure__body problem-list__body">
+        <p class="problem-list__text">Build a cloud authentication service that uses behaviour, device information and transaction patterns to allow, challenge or block an online transaction.</p>
+
+        <p class="problem-list__label">Expected outcome</p>
+        <p class="problem-list__text">A real-time risk service that returns a decision and explains the signals behind it.</p>
+
+
+      </div>
+    </details>
+  </li>
+
+  <li class="problem-list__item">
+    <details class="disclosure problem-list__entry">
+      <summary><span class="problem-list__n" aria-hidden="true">05</span><span class="problem-list__name">AI-Powered Content Authenticity Checker</span></summary>
+      <div class="disclosure__body problem-list__body">
+        <p class="problem-list__text">Build a tool that analyses text, images or video and assesses whether the content is authentic, manipulated or uncertain.</p>
+
+        <p class="problem-list__label">Expected outcome</p>
+        <p class="problem-list__text">A web tool or API that returns an assessment, confidence score, supporting signals and an explanation.</p>
+
+
+      </div>
+    </details>
+  </li>
+
+  <li class="problem-list__item">
+    <details class="disclosure problem-list__entry">
+      <summary><span class="problem-list__n" aria-hidden="true">06</span><span class="problem-list__name">Smart Groundwater and Irrigation Management</span></summary>
+      <div class="disclosure__body problem-list__body">
+        <p class="problem-list__text">Build a decision-support system that combines groundwater, rainfall, soil, crop and canal data to identify recharge locations and improve irrigation decisions.</p>
+
+        <p class="problem-list__label">Expected outcome</p>
+        <p class="problem-list__text">A dashboard for a selected area with groundwater trends, recharge locations and irrigation recommendations.</p>
+
+
+      </div>
+    </details>
+  </li>
+
+  <li class="problem-list__item">
+    <details class="disclosure problem-list__entry">
+      <summary><span class="problem-list__n" aria-hidden="true">07</span><span class="problem-list__name">AI-Based ESG Report Contradiction Detector</span></summary>
+      <div class="disclosure__body problem-list__body">
+        <p class="problem-list__text">Build a system that compares sustainability reports with regulatory filings or other public documents and flags potentially conflicting claims.</p>
+
+        <p class="problem-list__label">Expected outcome</p>
+        <p class="problem-list__text">A document comparison tool that highlights possible contradictions and explains each difference.</p>
+
+
+      </div>
+    </details>
+  </li>
+
+  <li class="problem-list__item">
+    <details class="disclosure problem-list__entry">
+      <summary><span class="problem-list__n" aria-hidden="true">08</span><span class="problem-list__name">AI Agent for Retail Supply-Chain Disruptions</span></summary>
+      <div class="disclosure__body problem-list__body">
+        <p class="problem-list__text">Build an agent that receives a disruption alert, gathers information from available tools or APIs, assesses the risk and recommends an action.</p>
+
+        <p class="problem-list__label">Expected outcome</p>
+        <p class="problem-list__text">A working agent that documents its investigation, risk assessment, recommendation and supporting evidence.</p>
+
+
+      </div>
+    </details>
+  </li>
+
+</ol>
+
+    </section>
+
+  </div>
+
+</div>
+
+    </main>
+
+
+    <footer class="site-footer">
+        <div class="site-footer__inner">
+            <svg class="site-footer__logo" viewBox="0 0 322 162" width="118" height="59" aria-hidden="true" focusable="false"><use href="#bios-logo" width="322" height="162"/></svg>
+            <div>
+                <p class="site-footer__line"><strong>BIOS</strong> — Bringing Innovation On-Stage</p>
+
+                <p class="site-footer__small">&copy;  BIOS Hackathon • Made with love for innovators</p>
+
+            </div>
+            <ul class="site-footer__links" aria-label="Community and policies">
+                <li><a href="/privacy">Privacy</a></li>
+                <li><a href="/participation-terms">Terms</a></li>
+                <li><a href="https://discord.gg/SsVuHQzX8" target="_blank" rel="noopener">Discord</a></li>
+                <li><a href="https://www.instagram.com/bioshackathon" target="_blank" rel="noopener">Instagram</a></li>
+            </ul>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

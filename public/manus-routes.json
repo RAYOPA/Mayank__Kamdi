@@ -1,0 +1,120 @@
+{
+  "routes": [
+    {
+      "path": "/",
+      "title": "BIOS Hackathon - Bringing Innovation On-Stage"
+    },
+    {
+      "path": "/tracks",
+      "title": "Participation Modes - BIOS Hackathon"
+    },
+    {
+      "path": "/guide",
+      "title": "Platform Guide - BIOS Hackathon"
+    },
+    {
+      "path": "/announcements",
+      "title": "Announcements - BIOS Hackathon"
+    },
+    {
+      "path": "/sponsors",
+      "title": "Sponsors - BIOS Hackathon"
+    },
+    {
+      "path": "/history",
+      "title": "BIOS 2.0 Proposal"
+    },
+    {
+      "path": "/dashboard",
+      "title": "Dashboard sign-in redirect"
+    },
+    {
+      "path": "/signin",
+      "title": "Sign in to your BIOS account"
+    },
+    {
+      "path": "/signin?next=/dashboard",
+      "title": "Sign in to open your dashboard"
+    },
+    {
+      "path": "/signin?next=/tracks",
+      "title": "Register for BIOS"
+    },
+    {
+      "path": "/signin?next=/forge",
+      "title": "Sign in to continue"
+    },
+    {
+      "path": "/signin?next=/addons/open_innovation",
+      "title": "Sign in to continue"
+    },
+    {
+      "path": "/signin?next=/addons/research",
+      "title": "Sign in to continue"
+    },
+    {
+      "path": "/signin?next=/init/register",
+      "title": "Sign in to register for SEED"
+    },
+    {
+      "path": "/signin?next=/init/spoc/register",
+      "title": "Sign in to register your school for SEED"
+    },
+    {
+      "path": "/mentors/register",
+      "title": "Mentor Registration - BIOS Hackathon"
+    },
+    {
+      "path": "/statements",
+      "title": "Screening Statements - BIOS Hackathon"
+    },
+    {
+      "path": "/statements/hackathon",
+      "title": "Hackathon Statements - BIOS Hackathon"
+    },
+    {
+      "path": "/init",
+      "title": "SEED - BIOS Hackathon"
+    },
+    {
+      "path": "/init/register",
+      "title": "SEED student-registration sign-in redirect"
+    },
+    {
+      "path": "/init/spoc/register",
+      "title": "SEED school-registration sign-in redirect"
+    },
+    {
+      "path": "/forge",
+      "title": "FORGE Industry Challenges - BIOS Hackathon"
+    },
+    {
+      "path": "/addons/open_innovation",
+      "title": "Open Innovation sign-in redirect"
+    },
+    {
+      "path": "/addons/research",
+      "title": "Research sign-in redirect"
+    },
+    {
+      "path": "/privacy",
+      "title": "Privacy Policy - BIOS Hackathon"
+    },
+    {
+      "path": "/participation-terms",
+      "title": "Participation Terms - BIOS Hackathon"
+    },
+    {
+      "path": "/organizing-team",
+      "title": "Organizing Team - BIOS Hackathon"
+    },
+    {
+      "path": "/leaderboard",
+      "title": "Leaderboard - BIOS Hackathon"
+    },
+    {
+      "path": "/mentors/directory",
+      "title": "Mentor Directory - BIOS Hackathon"
+    }
+  ]
+}

@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Platform Guide - BIOS Hackathon</title>
+    <meta name="theme-color" content="#efdccb" />
+    <meta name="color-scheme" content="light" /><link rel="preload" href="/static/theme/fonts/jost-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/static/theme/fonts/cormorant-garamond-latin-300-normal.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="/static/theme/css/tokens.css?v=9e682be5a4" />
+    <link rel="stylesheet" href="/static/theme/css/base.css?v=9e682be5a4" />
+    <link rel="stylesheet" href="/static/theme/css/components.css?v=9e682be5a4" />
+    <link rel="stylesheet" href="/static/theme/css/worlds.css?v=9e682be5a4" />
+    <link rel="stylesheet" href="/static/theme/css/pages.css?v=9e682be5a4" />
+    <link rel="icon" href="/static/theme/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/static/favicon_io/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon_io/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/static/favicon_io/favicon-16x16.png" />
+    <link rel="manifest" href="/static/favicon_io/site.webmanifest" />
+    <script src="/static/theme/js/app.js?v=9e682be5a4" defer></script>
+
+</head>
+
+<body class="world-public page-guide" data-oversize-message="{label} exceeds the {mb} MB limit. Choose a smaller file; the rest of your form has been preserved.">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <svg class="sprite" width="0" height="0" aria-hidden="true" focusable="false">
+  <defs>
+    <path id="g-B" fill="none" d="M708.8 194.3H673.6V294.3H712.2A26.8 26.8 0 0 0 712.2 240.7H673.6M708.8 194.3A23.2 23.2 0 0 1 708.8 240.7"/>
+    <path id="g-I" fill="none" d="M762 194.3V294.3"/>
+    <path id="g-S" fill="none" d="M972.76 200.94C967.54 197.8 962.44 194.78 956.45 193.36C938.95 189.18 913.87 195.59 915.1 217.91C916.69 246.69 965.3 235.99 974.23 260.32C980.58 277.62 967.07 292.14 950.68 294.97C936.23 297.46 922.85 292.36 910.96 284.54"/>
+    <clipPath id="lg-half" clipPathUnits="userSpaceOnUse"><path d="M836.7 188.9A55.7 55.7 0 0 1 836.7 300.3Z"/></clipPath>
+    <radialGradient id="lg-bead" cx=".42" cy=".38" r=".7">
+      <stop offset="0" stop-color="#f1d08e"/>
+      <stop offset=".55" stop-color="#d49a45"/>
+      <stop offset="1" stop-color="#a86d22"/>
+    </radialGradient>
+    <symbol id="bios-logo" viewBox="664 164 322 162">
+      <image class="lg-fill" href="/static/theme/art/o-fill.webp" x="779.2" y="187.1" width="115" height="115" preserveAspectRatio="none" clip-path="url(#lg-half)"/>
+      <path class="lg-line" fill="none" stroke="#b0793a" stroke-width="1.6" stroke-opacity=".72" d="M836.7 167V323"/>
+      <use class="lg-glyph" href="#g-B" stroke="#16120f" stroke-width="2.6" stroke-linejoin="miter" stroke-miterlimit="8"/>
+      <use class="lg-glyph" href="#g-I" stroke="#16120f" stroke-width="2.6" stroke-linejoin="miter" stroke-miterlimit="8"/>
+      <circle class="lg-glyph" fill="none" stroke="#16120f" stroke-width="2.6" stroke-linejoin="miter" stroke-miterlimit="8" cx="836.7" cy="244.6" r="56.8"/>
+      <use class="lg-glyph" href="#g-S" stroke="#16120f" stroke-width="2.6" stroke-linejoin="miter" stroke-miterlimit="8"/>
+      <circle class="lg-bead" fill="url(#lg-bead)" cx="836.7" cy="244.6" r="6.6"/>
+    </symbol>
+    <symbol id="o-art" viewBox="772 164 129.4 162">
+      <image class="lg-fill" href="/static/theme/art/o-fill.webp" x="779.2" y="187.1" width="115" height="115" preserveAspectRatio="none" clip-path="url(#lg-half)"/>
+      <path class="lg-line" fill="none" stroke="#b0793a" stroke-width="1.6" stroke-opacity=".72" d="M836.7 167V323"/>
+      <circle class="lg-glyph" fill="none" stroke="#16120f" stroke-width="2.6" stroke-linejoin="miter" stroke-miterlimit="8" cx="836.7" cy="244.6" r="56.8"/>
+      <circle class="lg-bead" fill="url(#lg-bead)" cx="836.7" cy="244.6" r="6.6"/>
+    </symbol>
+    <symbol id="o-mini" viewBox="-62 -62 124 124">
+      <path class="o-mini__fill" d="M0-55.7A55.7 55.7 0 0 1 0 55.7Z"/>
+      <circle class="o-mini__ring" r="56.8"/>
+      <path class="o-mini__axis" d="M0-56.8V56.8"/>
+      <circle class="o-mini__dot" r="7"/>
+    </symbol>
+    <symbol id="o-mode" viewBox="-62 -62 124 124">
+      <path class="o-mode__left" d="M0-55.7A55.7 55.7 0 0 0 0 55.7Z"/>
+      <path class="o-mode__right" d="M0-55.7A55.7 55.7 0 0 1 0 55.7Z"/>
+      <circle class="o-mode__ring" r="56.8"/>
+      <path class="o-mode__axis" d="M0-56.8V56.8"/>
+    </symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+  </defs>
+</svg>
+    <header class="site-header">
+  <div class="site-header__bar">
+    <a class="brand" href="/">
+      <svg class="brand__logo" viewBox="0 0 322 162" width="99" height="50" role="img" aria-label="BIOS Hackathon, home" focusable="false"><use href="#bios-logo" width="322" height="162"/></svg>
+      <span class="brand__sub">Bringing Innovation<br>On-Stage</span>
+    </a>
+    <nav class="nav-primary" aria-label="Primary">
+      <ul>
+
+        <li><a class="nav-link" href="/">Home</a></li>
+
+        <li><a class="nav-link" href="/tracks">Tracks</a></li>
+
+        <li><a class="nav-link" href="/guide" aria-current="page">Guide</a></li>
+
+        <li><a class="nav-link" href="/announcements">Announcements</a></li>
+
+        <li><a class="nav-link" href="/sponsors">Sponsors</a></li>
+
+        <li><a class="nav-link" href="/history">BIOS 25</a></li>
+
+      </ul>
+    </nav>
+    <div class="nav-actions">
+
+      <a class="btn btn--primary btn--sm nav-login" href="/signin?next=/dashboard">Login</a>
+
+      <button id="mobile-menu-button" class="nav-toggle nav-toggle--guest" type="button" aria-controls="mobile-menu" aria-expanded="false">
+        <span class="nav-toggle__icon" aria-hidden="true"><span></span></span><span class="nav-toggle__label">Menu</span>
+      </button>
+      <nav id="mobile-menu" class="nav-menu hidden" aria-label="Pages">
+        <div class="nav-menu__group nav-menu__group--pages">
+          <p class="nav-menu__title">Explore</p>
+          <ul>
+
+            <li style="--i: 0"><a class="nav-menu__link" href="/">Home</a></li>
+
+            <li style="--i: 1"><a class="nav-menu__link" href="/tracks">Tracks</a></li>
+
+            <li style="--i: 2"><a class="nav-menu__link" href="/guide" aria-current="page">Guide</a></li>
+
+            <li style="--i: 3"><a class="nav-menu__link" href="/announcements">Announcements</a></li>
+
+            <li style="--i: 4"><a class="nav-menu__link" href="/sponsors">Sponsors</a></li>
+
+            <li style="--i: 5"><a class="nav-menu__link" href="/history">BIOS 25</a></li>
+
+          </ul>
+        </div>
+
+      </nav>
+    </div>
+  </div>
+</header>
+
+    <main id="main-content" class="app-main" tabindex="-1">
+
+<div class="page shell shell--wide guide">
+  <header class="page-head">
+  <div class="page-head__text">
+
+    <p class="eyebrow"><svg class="eyebrow__o" aria-hidden="true" focusable="false"><use href="#o-mini"/></svg><span>Platform guide</span></p>
+    <h1>Your route through BIOS</h1>
+    <p class="lede">A clear guide to choosing a mode, forming a team, completing screening and reaching the hackathon.</p>
+    <div class="page-head__actions">
+    <a class="btn btn--primary" href="/tracks">Explore modes</a>
+    <a class="btn btn--secondary" href="/statements">Read screening statements</a>
+  </div>
+  </div>
+</header>
+
+  <nav class="guide__index" aria-label="Guide sections">
+    <a href="#about">About BIOS</a>
+    <a href="#flow">How it works</a>
+    <a href="#modes">Who each mode is for</a>
+    <a href="#new-tracks">New tracks</a>
+    <a href="#registration">Registering and joining</a>
+    <a href="#problems">Problem statements</a>
+    <a href="#screening">Screening</a>
+    <a href="#results">Results and rounds</a>
+    <a href="#ambassadors">Campus ambassadors</a>
+    <a href="#support">Mentors and help</a>
+    <a href="#dates">Dates</a>
+  </nav><section id="about" class="guide__section" aria-labelledby="about-title">
+    <div class="guide__section-head"><p class="eyebrow">01 · About</p><h2 id="about-title">What BIOS is</h2>
+      <p>BIOS (Bringing Innovation On-Stage) is the hackathon of the CSED Department at Thapar Institute of Engineering and Technology, run with the IEEE Student Branch. Teams take an idea from a first sketch to a working prototype, on site on 30, 31 October and 1 November 2026.</p>
+      <p>SEED, CORE and FRONTIER use a Screening round before the hackathon. Open Innovation and Research follow their own presentation schedule.</p>
+    </div>
+  </section>
+
+  <section id="flow" class="guide__section" aria-labelledby="flow-title">
+    <div class="guide__section-head"><p class="eyebrow">02 · Process</p><h2 id="flow-title">How participation works</h2></div>
+    <ol class="guide-flow">
+      <li><span>01</span><div><h3>Create your BIOS account</h3><p>Sign in, complete your profile and provide the required participant information.</p></div></li>
+      <li><span>02</span><div><h3>Choose your participation</h3><p>Each team participates in one main mode: SEED, CORE or FRONTIER, with selected FRONTIER teams able to move exclusively into invitation-only FORGE. CORE and FRONTIER participants can also enter Open Innovation, Research Track, or both as independent add-ons.</p></div></li>
+      <li><span>03</span><div><h3>Follow your track</h3><p>CORE and FRONTIER teams choose and submit only for their own mode. A team that accepts FORGE leaves FRONTIER and works and submits only on its assigned FORGE briefs. Open Innovation and Research teams prepare their own idea or research.</p></div></li>
+      <li><span>04</span><div><h3>Present your work</h3><p>Shortlisted teams move through later rounds. Open Innovation presents on 31 October; Research Track presents on 1 November.</p></div></li>
+    </ol>
+  </section>
+
+  <section id="modes" class="guide__section" aria-labelledby="modes-title">
+    <div class="guide__section-head"><p class="eyebrow">03 · Participation</p><h2 id="modes-title">Who each mode is for</h2></div>
+    <div class="grid grid--2 guide-pairs guide-modes">
+
+      <article class="card guide-mode world-seed">
+        <span class="mode-badge mode-badge--seed"><svg class="mode-badge__o" aria-hidden="true" focusable="false"><use href="#o-mode"/></svg>SEED</span>
+        <h3>SEED</h3>
+        <p>School students working on SDG-focused ideas with support from an approved school SPOC.</p>
+
+      </article>
+
+      <article class="card guide-mode world-core">
+        <span class="mode-badge mode-badge--core"><svg class="mode-badge__o" aria-hidden="true" focusable="false"><use href="#o-mode"/></svg>CORE</span>
+        <h3>CORE</h3>
+        <p>First-time and emerging builders looking for a structured, accessible challenge.</p>
+
+      </article>
+
+      <article class="card guide-mode world-frontier">
+        <span class="mode-badge mode-badge--frontier"><svg class="mode-badge__o" aria-hidden="true" focusable="false"><use href="#o-mode"/></svg>FRONTIER</span>
+        <h3>FRONTIER</h3>
+        <p>Experienced teams ready for a more demanding technical and product challenge.</p>
+
+      </article>
+
+      <article class="card guide-mode world-forge">
+        <span class="mode-badge mode-badge--forge"><svg class="mode-badge__o" aria-hidden="true" focusable="false"><use href="#o-mode"/></svg>FORGE</span>
+        <h3>FORGE</h3>
+        <p>Invited teams that move from FRONTIER into the separate FORGE mode and work only on assigned industry briefs.</p>
+        <p class="small muted">There is no direct FORGE registration. Accepting an invitation moves the entire team exclusively into FORGE.</p>
+      </article>
+
+    </div>
+  </section>
+
+  <section id="new-tracks" class="guide__section" aria-labelledby="new-tracks-title">
+    <div class="guide__section-head"><p class="eyebrow">Independent add-ons</p><h2 id="new-tracks-title">Open Innovation and Research Track</h2><p>Enter either add-on—or both—even if you already belong to a CORE or FRONTIER team. Your add-on entry does not change that team or its submission. New participants may enter directly. SEED participants are not eligible.</p></div>
+    <div class="grid grid--2 guide-pairs">
+      <article class="card"><p class="eyebrow">Add-on · Open Innovation</p><h3 class="card__title">Bring your own idea</h3><p>Newcomers work on a problem of their choice, with mentorship on 30 October and final evaluation on 31 October. Startups with an idea or pitch deck may present to professionals and alumni and skip mentorship if they do not need it.</p><div class="card__foot"><a href="/addons/open_innovation">Enter Open Innovation</a></div></article>
+      <article class="card"><p class="eyebrow">Add-on · Research Track</p><h3 class="card__title">Ask a better question</h3><p>New to research? Start with a guided problem statement and mentoring on 30 October. If you already have a topic or do not need mentoring, bring your own work directly to the final presentations on 1 November. Individuals and teams are welcome; teams of four are recommended for beginners.</p><div class="card__foot"><a href="/addons/research">Enter Research Track</a></div></article>
+    </div>
+    <div class="panel"><h3 class="panel__title">Already submitted for CORE or FRONTIER?</h3><p>You can still enter either add-on yourself. Complete its separate registration, then participate individually or create/join a team of up to four for that add-on. Your CORE or FRONTIER team, mode and screening submission stay unchanged. A person can participate in both add-ons, with a different team or solo entry in each.</p></div>
+  </section>
+
+  <section id="registration" class="guide__section" aria-labelledby="registration-title">
+    <div class="guide__section-head"><p class="eyebrow">04 · Registration</p><h2 id="registration-title">Registering and joining</h2><p>Only a team&rsquo;s leader completes the full registration form. Everyone else joins with the team code, and every participant verifies their identity and accepts the policies.</p></div>
+    <div class="grid grid--2 guide-pairs">
+      <article class="card"><p class="eyebrow">SEED</p><h3 class="card__title">Schools and their SPOC</h3>
+        <ol class="list-rule">
+          <li>A teacher or staff member registers the school as its SPOC (single point of contact). The organisers review the request.</li>
+          <li>Once approved, the SPOC shares the school code with students.</li>
+          <li>Each student registers with the school code, a school-issued ID and a guardian consent form signed by a parent or guardian.</li>
+          <li>The SPOC verifies each student, and verified students form their teams.</li>
+        </ol>
+        <div class="card__foot"><a href="/init">SEED registration</a></div>
+      </article>
+      <article class="card"><p class="eyebrow">CORE and FRONTIER</p><h3 class="card__title">The team leader registers</h3><p>The leader provides their institution, enrolment number, phone number and college-issued ID, then accepts the policies. They create a team on the dashboard and share its code. A team keeps one mode.</p></article>
+      <article class="card"><p class="eyebrow">Team code</p><h3 class="card__title">Joining a team</h3><p>For CORE or FRONTIER, teammates join with the team code on their dashboard. For an add-on, each person registers for that add-on first, then uses its separate team code. Add-on teams have at most four members and do not alter CORE or FRONTIER membership. Every participant verifies their identity and accepts the policies.</p></article>
+      <article class="card"><p class="eyebrow">Verification</p><h3 class="card__title">Identity and consent</h3><ul class="list-rule"><li>College and university participants upload a college-issued identity card.</li><li>SEED students upload a school-issued identity card and signed guardian consent, and their SPOC verifies them.</li><li>Every participant accepts the <a href="/privacy">Privacy Policy</a> and the <a href="/participation-terms">Participation Terms</a>.</li></ul></article>
+    </div>
+    <div class="panel guide-matching">
+      <h3 class="panel__title">Find teammates by skills</h3>
+      <ol class="list-rule">
+        <li>Open Find teams by skills from your dashboard. If you cannot recruit, use the Requests and Messages history links instead.</li>
+        <li>Solo participants may contact other solo participants or the leader of a team with room. Only the leader may contact a solo participant on behalf of a team. Teams do not contact other teams through matching.</li>
+        <li>A request opens a one-to-one chat when accepted. It does not reserve a place or add anyone to a team.</li>
+        <li>To join, enter the team code on your dashboard. The normal capacity and mode rules apply. For Screening teams, joining and leaving close when the team submits or Screening ends. Earlier chats remain readable.</li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="problems" class="guide__section" aria-labelledby="problems-title">
+    <div class="guide__section-head"><p class="eyebrow">05 · Briefs</p><h2 id="problems-title">Two separate choices</h2><p>Screening uses public sample statements. The actual hackathon statements are managed separately and are not revealed during screening.</p></div>
+    <div class="grid grid--2">
+      <article class="card"><p class="eyebrow">Screening</p><h3 class="card__title">Public sample statements</h3><p>Review the statements without signing in. After forming a team, the leader selects one from the team&rsquo;s mode on the dashboard.</p><div class="card__foot"><a href="/statements">View screening statements</a></div></article>
+      <article class="card"><p class="eyebrow">Hackathon</p><h3 class="card__title">A fresh statement choice</h3><p>After screening closes, shortlisted teams choose again from the hackathon statements. Their participation mode does not change.</p></article>
+    </div>
+  </section>
+
+  <section id="screening" class="guide__section" aria-labelledby="screening-title">
+    <div class="guide__section-head"><p class="eyebrow">06 · Screening</p><h2 id="screening-title">Screening submission</h2><p>Choose one statement from your team&rsquo;s mode. Complete the official five-slide presentation and upload the PPTX or a PDF export through the Screening round on your dashboard. Add a YouTube link to a one-minute video explaining your approach and how it solves the problem.</p></div>
+    <div class="grid grid--3 guide-screening">
+
+
+      <article class="card world-seed">
+        <span class="mode-badge mode-badge--seed"><svg class="mode-badge__o" aria-hidden="true" focusable="false"><use href="#o-mode"/></svg>SEED</span>
+        <h3>SEED</h3>
+        <p>10 published statements</p>
+        <p class="card__foot"><a href="/static/downloads/BIOS_V2_SEED_Screening_Template.pptx" download>Download submission template</a></p>
+      </article>
+
+
+      <article class="card world-core">
+        <span class="mode-badge mode-badge--core"><svg class="mode-badge__o" aria-hidden="true" focusable="false"><use href="#o-mode"/></svg>CORE</span>
+        <h3>CORE</h3>
+        <p>9 published statements</p>
+        <p class="card__foot"><a href="/static/downloads/BIOS_V2_CORE_FRONTIER_Screening_Template.pptx" download>Download submission template</a></p>
+      </article>
+
+
+      <article class="card world-frontier">
+        <span class="mode-badge mode-badge--frontier"><svg class="mode-badge__o" aria-hidden="true" focusable="false"><use href="#o-mode"/></svg>FRONTIER</span>
+        <h3>FRONTIER</h3>
+        <p>8 published statements</p>
+        <p class="card__foot"><a href="/static/downloads/BIOS_V2_CORE_FRONTIER_Screening_Template.pptx" download>Download submission template</a></p>
+      </article>
+
+    </div>
+    <div class="actions"><a class="btn btn--secondary" href="/statements">View the screening statements</a></div>
+  </section>
+
+  <section id="results" class="guide__section" aria-labelledby="results-title">
+    <div class="guide__section-head"><p class="eyebrow">07 · Results</p><h2 id="results-title">Shortlisting and later rounds</h2></div>
+    <div class="grid grid--2">
+      <article class="card"><h3 class="card__title">How shortlisting works</h3><p>For SEED, CORE and FRONTIER, the organisers review each screening submission and mark the team shortlisted or not selected. Shortlisted teams continue to the later rounds. Open Innovation and Research have their own presentation schedule.</p></article>
+      <article class="card"><h3 class="card__title">Where you see the result</h3><p>Your dashboard shows your team&rsquo;s result for each round, whether it can continue and what to do next, as soon as the organisers publish it. Keep an eye on the <a href="/announcements">announcements</a> as well.</p></article>
+    </div>
+  </section>
+
+  <section id="ambassadors" class="guide__section" aria-labelledby="ambassadors-title">
+    <div class="guide__section-head"><p class="eyebrow">08 · Community</p><h2 id="ambassadors-title">Campus ambassadors</h2></div>
+    <div class="grid grid--aside">
+      <div class="stack"><p>Refer friends to BIOS and climb your campus leaderboard. Only verified CORE and FRONTIER registrations count.</p><p>Selected participants near the top of each campus leaderboard will become campus ambassadors.</p></div>
+      <aside class="panel panel--quiet"><h3 class="panel__title">How referrals count</h3><ol class="list-rule"><li>Share the referral link or code from your dashboard. You can share it before registering for a mode.</li><li>Your friend enters the code during their first CORE or FRONTIER registration. A code entered after their first registration cannot be added later.</li><li>The referral stays pending until you submit a CORE or FRONTIER registration and your friend&rsquo;s CORE or FRONTIER registration is approved. These steps can happen in either order.</li><li>Once both conditions are met, the referral counts toward your points and campus leaderboard position.</li></ol><p class="small muted">A code used during your friend&rsquo;s first registration stays linked while it is pending. If either condition is never met, it does not count.</p><div class="panel__foot"><a href="/leaderboard">View leaderboard</a></div></aside>
+    </div>
+  </section>
+
+  <section id="support" class="guide__section" aria-labelledby="support-title">
+    <div class="guide__section-head"><p class="eyebrow">09 · Support</p><h2 id="support-title">Mentors and help</h2></div>
+    <div class="grid grid--2">
+      <article class="card"><h3 class="card__title">Mentors</h3><p>Mentors are experienced people who help teams with direction and feedback. Teams browse the mentor directory and can keep up to 3 requests pending at a time. When a mentor accepts, they appear on the team&rsquo;s dashboard.</p><div class="card__foot"><a href="/mentors/directory">Mentor directory</a> &middot; <a href="/mentors/register">Apply to mentor</a></div></article>
+      <article class="card"><h3 class="card__title">Getting help</h3><ul class="list-rule"><li>Read the <a href="/announcements">announcements</a> for updates from the organisers.</li><li>Ask on the <a href="https://discord.gg/SsVuHQzX8" target="_blank" rel="noopener">BIOS Discord</a>.</li><li>Meet the <a href="/organizing-team">organising team</a>.</li></ul></article>
+    </div>
+  </section>
+
+  <section id="dates" class="guide__section" aria-labelledby="dates-title">
+    <div class="guide__section-head"><p class="eyebrow">10 · Schedule</p><h2 id="dates-title">Dates to plan around</h2><p>A date without a time closes at the end of that day, India Standard Time (IST).</p></div>
+    <ol class="guide-schedule">
+
+      <li><time datetime="2026-10-28">28 October 2026, 23:59 IST</time><div><h3>SEED registrations and submissions close</h3><p>School registrations and SEED screening submissions must be complete.</p></div></li>
+
+      <li><time datetime="2026-10-28">28 October 2026, 23:59 IST</time><div><h3>CORE and FRONTIER registrations and submissions close</h3><p>Team registrations and screening submissions close for both modes.</p></div></li>
+
+      <li><time datetime="2026-10-22/2026-10-26">22–26 October 2026</time><div><h3>Screening results</h3><p>Teams can check whether they are selected for the offline hackathon.</p></div></li>
+
+      <li><time datetime="2026-10-30/2026-11-01">30, 31 October and 1 November 2026</time><div><h3>Offline hackathon</h3><p>Selected teams build, present and complete the rounds on site at Thapar Institute of Engineering and Technology.</p></div></li>
+
+    </ol>
+  </section>
+</div>
+
+    </main>
+
+
+    <footer class="site-footer">
+        <div class="site-footer__inner">
+            <svg class="site-footer__logo" viewBox="0 0 322 162" width="118" height="59" aria-hidden="true" focusable="false"><use href="#bios-logo" width="322" height="162"/></svg>
+            <div>
+                <p class="site-footer__line"><strong>BIOS</strong> — Bringing Innovation On-Stage</p>
+
+                <p class="site-footer__small">&copy;  BIOS Hackathon • Made with love for innovators</p>
+
+            </div>
+            <ul class="site-footer__links" aria-label="Community and policies">
+                <li><a href="/privacy">Privacy</a></li>
+                <li><a href="/participation-terms">Terms</a></li>
+                <li><a href="https://discord.gg/SsVuHQzX8" target="_blank" rel="noopener">Discord</a></li>
+                <li><a href="https://www.instagram.com/bioshackathon" target="_blank" rel="noopener">Instagram</a></li>
+            </ul>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

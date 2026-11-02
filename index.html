@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>BIOS Hackathon - Bringing Innovation On-Stage</title>
+    <meta name="theme-color" content="#efdccb" />
+    <meta name="color-scheme" content="light" /><link rel="preload" href="/static/theme/fonts/jost-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/static/theme/fonts/cormorant-garamond-latin-300-normal.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="/static/theme/css/tokens.css?v=9e682be5a4" />
+    <link rel="stylesheet" href="/static/theme/css/base.css?v=9e682be5a4" />
+    <link rel="stylesheet" href="/static/theme/css/components.css?v=9e682be5a4" />
+    <link rel="stylesheet" href="/static/theme/css/worlds.css?v=9e682be5a4" />
+    <link rel="stylesheet" href="/static/theme/css/pages.css?v=9e682be5a4" />
+    <link rel="icon" href="/static/theme/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/static/favicon_io/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon_io/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/static/favicon_io/favicon-16x16.png" />
+    <link rel="manifest" href="/static/favicon_io/site.webmanifest" />
+    <script src="/static/theme/js/app.js?v=9e682be5a4" defer></script>
+
+<link rel="stylesheet" href="/static/home/home.css?v=9e682be5a4" />
+<script src="/static/home/home.js?v=9e682be5a4" defer></script>
+<link rel="prefetch" href="/static/theme/art/blueprint-human.webp" as="image" type="image/webp" />
+<link rel="prefetch" href="/static/theme/art/blueprint-machine.webp" as="image" type="image/webp" /><style nonce="rGZXJWwL9TatxzYPM3HZuzGh">@view-transition { navigation: auto; } @media (prefers-reduced-motion: reduce) { @view-transition { navigation: none; } }</style>
+<link rel="expect" href="#top" blocking="render" />
+<script nonce="rGZXJWwL9TatxzYPM3HZuzGh">
+addEventListener('pagereveal', function (e) {
+  var vt = e.viewTransition;
+  if (!vt || location.hash) return;
+  var human = document.querySelector('.art-layer--human'), machine = document.querySelector('.art-layer--machine');
+  if (!human || !machine) return;
+  human.style.viewTransitionName = 'bios-human';
+  machine.style.viewTransitionName = 'bios-machine';
+  window.__biosArrival = vt;
+  var landed = function () {
+    if (window.__biosArrival !== vt) return;
+    window.__biosArrival = null;
+    human.style.viewTransitionName = machine.style.viewTransitionName = '';
+  };
+  vt.finished.then(landed, landed);
+});
+</script>
+
+</head>
+
+<body class="page-home" data-oversize-message="{label} exceeds the {mb} MB limit. Choose a smaller file; the rest of your form has been preserved.">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <svg class="sprite" width="0" height="0" aria-hidden="true" focusable="false">
+  <defs>
+    <path id="g-B" fill="none" d="M708.8 194.3H673.6V294.3H712.2A26.8 26.8 0 0 0 712.2 240.7H673.6M708.8 194.3A23.2 23.2 0 0 1 708.8 240.7"/>
+    <path id="g-I" fill="none" d="M762 194.3V294.3"/>
+    <path id="g-S" fill="none" d="M972.76 200.94C967.54 197.8 962.44 194.78 956.45 193.36C938.95 189.18 913.87 195.59 915.1 217.91C916.69 246.69 965.3 235.99 974.23 260.32C980.58 277.62 967.07 292.14 950.68 294.97C936.23 297.46 922.85 292.36 910.96 284.54"/>
+    <clipPath id="lg-half" clipPathUnits="userSpaceOnUse"><path d="M836.7 188.9A55.7 55.7 0 0 1 836.7 300.3Z"/></clipPath>
+    <radialGradient id="lg-bead" cx=".42" cy=".38" r=".7">
+      <stop offset="0" stop-color="#f1d08e"/>
+      <stop offset=".55" stop-color="#d49a45"/>
+      <stop offset="1" stop-color="#a86d22"/>
+    </radialGradient>
+    <symbol id="bios-logo" viewBox="664 164 322 162">
+      <image class="lg-fill" href="/static/theme/art/o-fill.webp" x="779.2" y="187.1" width="115" height="115" preserveAspectRatio="none" clip-path="url(#lg-half)"/>
+      <path class="lg-line" fill="none" stroke="#b0793a" stroke-width="1.6" stroke-opacity=".72" d="M836.7 167V323"/>
+      <use class="lg-glyph" href="#g-B" stroke="#16120f" stroke-width="2.6" stroke-linejoin="miter" stroke-miterlimit="8"/>
+      <use class="lg-glyph" href="#g-I" stroke="#16120f" stroke-width="2.6" stroke-linejoin="miter" stroke-miterlimit="8"/>
+      <circle class="lg-glyph" fill="none" stroke="#16120f" stroke-width="2.6" stroke-linejoin="miter" stroke-miterlimit="8" cx="836.7" cy="244.6" r="56.8"/>
+      <use class="lg-glyph" href="#g-S" stroke="#16120f" stroke-width="2.6" stroke-linejoin="miter" stroke-miterlimit="8"/>
+      <circle class="lg-bead" fill="url(#lg-bead)" cx="836.7" cy="244.6" r="6.6"/>
+    </symbol>
+    <symbol id="o-art" viewBox="772 164 129.4 162">
+      <image class="lg-fill" href="/static/theme/art/o-fill.webp" x="779.2" y="187.1" width="115" height="115" preserveAspectRatio="none" clip-path="url(#lg-half)"/>
+      <path class="lg-line" fill="none" stroke="#b0793a" stroke-width="1.6" stroke-opacity=".72" d="M836.7 167V323"/>
+      <circle class="lg-glyph" fill="none" stroke="#16120f" stroke-width="2.6" stroke-linejoin="miter" stroke-miterlimit="8" cx="836.7" cy="244.6" r="56.8"/>
+      <circle class="lg-bead" fill="url(#lg-bead)" cx="836.7" cy="244.6" r="6.6"/>
+    </symbol>
+    <symbol id="o-mini" viewBox="-62 -62 124 124">
+      <path class="o-mini__fill" d="M0-55.7A55.7 55.7 0 0 1 0 55.7Z"/>
+      <circle class="o-mini__ring" r="56.8"/>
+      <path class="o-mini__axis" d="M0-56.8V56.8"/>
+      <circle class="o-mini__dot" r="7"/>
+    </symbol>
+    <symbol id="o-mode" viewBox="-62 -62 124 124">
+      <path class="o-mode__left" d="M0-55.7A55.7 55.7 0 0 0 0 55.7Z"/>
+      <path class="o-mode__right" d="M0-55.7A55.7 55.7 0 0 1 0 55.7Z"/>
+      <circle class="o-mode__ring" r="56.8"/>
+      <path class="o-mode__axis" d="M0-56.8V56.8"/>
+    </symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+  </defs>
+</svg>
+    <div class="paper" aria-hidden="true">
+  <div class="paper__tint paper__tint--warm"></div>
+  <div class="paper__tint paper__tint--cool"></div>
+</div><div class="paper paper--veil" aria-hidden="true">
+  <div class="paper__tint paper__tint--warm"></div>
+  <div class="paper__tint paper__tint--cool"></div>
+</div>
+<header class="site-header site-header--home">
+  <div class="site-header__bar">
+    <a class="brand" href="/">
+      <svg class="brand__logo" viewBox="0 0 322 162" width="99" height="50" role="img" aria-label="BIOS Hackathon, home" focusable="false"><use href="#bios-logo" width="322" height="162"/></svg>
+      <span class="brand__sub">Bringing Innovation<br>On-Stage</span>
+    </a>
+    <nav class="nav-primary" aria-label="Primary">
+      <ul>
+
+        <li><a class="nav-link" href="/" aria-current="page">Home</a></li>
+
+        <li><a class="nav-link" href="/tracks">Tracks</a></li>
+
+        <li><a class="nav-link" href="/guide">Guide</a></li>
+
+        <li><a class="nav-link" href="/announcements">Announcements</a></li>
+
+        <li><a class="nav-link" href="/sponsors">Sponsors</a></li>
+
+        <li><a class="nav-link" href="/history">BIOS 25</a></li>
+
+      </ul>
+    </nav>
+    <div class="nav-actions">
+
+      <a class="btn btn--primary btn--sm nav-login" href="/signin?next=/dashboard">Login</a>
+
+      <button id="mobile-menu-button" class="nav-toggle nav-toggle--guest" type="button" aria-controls="mobile-menu" aria-expanded="false">
+        <span class="nav-toggle__icon" aria-hidden="true"><span></span></span><span class="nav-toggle__label">Menu</span>
+      </button>
+      <nav id="mobile-menu" class="nav-menu hidden" aria-label="Pages">
+        <div class="nav-menu__group nav-menu__group--pages">
+          <p class="nav-menu__title">Explore</p>
+          <ul>
+
+            <li style="--i: 0"><a class="nav-menu__link" href="/" aria-current="page">Home</a></li>
+
+            <li style="--i: 1"><a class="nav-menu__link" href="/tracks">Tracks</a></li>
+
+            <li style="--i: 2"><a class="nav-menu__link" href="/guide">Guide</a></li>
+
+            <li style="--i: 3"><a class="nav-menu__link" href="/announcements">Announcements</a></li>
+
+            <li style="--i: 4"><a class="nav-menu__link" href="/sponsors">Sponsors</a></li>
+
+            <li style="--i: 5"><a class="nav-menu__link" href="/history">BIOS 25</a></li>
+
+          </ul>
+        </div>
+
+      </nav>
+    </div>
+  </div>
+</header>
+
+
+    <main id="main-content" class="app-main" tabindex="-1">
+
+<svg class="sprite" width="0" height="0" aria-hidden="true" focusable="false">
+  <defs>
+    <clipPath id="clip-disc-bio" clipPathUnits="userSpaceOnUse"><circle cx="836.7" cy="244.6" r="55.7"/></clipPath>
+    <clipPath id="clip-disc-os" clipPathUnits="userSpaceOnUse"><circle cx="1136.7" cy="244.6" r="55.7"/></clipPath>
+  </defs>
+</svg>
+
+<!-- ============================== HERO ============================== -->
+<section class="hero" id="top" aria-labelledby="hero-title">
+  <div class="hero__stage" data-o-fill="/static/theme/art/o-fill.webp">
+    <div class="art-frame" role="img" aria-label="Painting: on the left a woman among roses, vines, birds and a lyre reaches out; on the right a figure of blue mosaic, circuitry and geometric flowers reaches back. Their fingertips almost touch beneath the word BIOS.">
+      <div class="art-cam">
+        <!-- apparatus: the plumb line joining the O to the fingertips (drawn under the painting, as in the original) -->
+        <svg class="art-svg art-svg--under" viewBox="0 0 1672 941" aria-hidden="true" focusable="false">
+          <defs>
+            <linearGradient id="thread-grad" gradientUnits="userSpaceOnUse" x1="0" y1="160" x2="0" y2="556">
+              <stop offset="0" stop-color="#8f6436" stop-opacity=".22"/>
+              <stop offset=".3" stop-color="#a0692c" stop-opacity=".5"/>
+              <stop offset=".62" stop-color="#a86a22" stop-opacity=".7"/>
+              <stop offset=".95" stop-color="#946020" stop-opacity=".55"/>
+              <stop offset="1" stop-color="#946020" stop-opacity=".1"/>
+            </linearGradient>
+            <radialGradient id="orb-grad" cx=".4" cy=".36" r=".72">
+              <stop offset="0" stop-color="#f7e2bf"/>
+              <stop offset=".42" stop-color="#dc9d3c"/>
+              <stop offset="1" stop-color="#a5650f"/>
+            </radialGradient>
+          </defs>
+          <g class="apparatus">
+            <path class="thread" d="M836.7 165V187.8M836.7 301.4V553"/>
+            <g class="apparatus__beads">
+              <circle class="bead" cx="836.7" cy="368.2" r="1.8"/>
+              <path class="tick" d="M830.2 397.4H843.2"/>
+              <path class="orb-rays" d="M830.7 439.9L820.7 441.2L830.7 442.5ZM842.7 439.9L852.7 441.2L842.7 442.5ZM835.4 435.2L836.7 426.2L838 435.2ZM835.4 447.2L836.7 456.2L838 447.2Z"/>
+              <circle class="orb" cx="836.7" cy="441.2" r="7.4"/>
+              <path class="diamond" d="M836.7 505L843.3 511.4L836.7 517.8L830.1 511.4Z"/>
+              <circle class="bead" cx="836.7" cy="537.4" r="2"/>
+            </g>
+            <circle class="field-ring" cx="836.7" cy="441.6" r="44.2"/>
+          </g>
+        </svg>
+
+        <picture class="art-layer art-layer--human">
+          <source type="image/avif" srcset="/static/theme/art/art-human.avif">
+          <img src="/static/theme/art/art-human.webp" width="842" height="941" alt="" decoding="async" fetchpriority="high">
+        </picture>
+        <picture class="art-layer art-layer--machine">
+          <source type="image/avif" srcset="/static/theme/art/art-machine.avif">
+          <img src="/static/theme/art/art-machine.webp" width="830" height="941" alt="" decoding="async" fetchpriority="high">
+        </picture>
+
+        <!-- the logo, rebuilt as vectors so it can divide: BIOS → BIO + OS -->
+        <svg class="art-svg art-svg--over" viewBox="0 0 1672 941" aria-hidden="true" focusable="false">
+          <defs>
+            <clipPath id="clip-phase-bio" clipPathUnits="userSpaceOnUse">
+              <path d="M836.7 188.9A55.7 55.7 0 0 1 836.7 300.3Z"/><ellipse class="o-lens" data-o="bio" cx="836.7" cy="244.6" rx="0" ry="55.7"/>
+            </clipPath>
+            <clipPath id="clip-phase-os" clipPathUnits="userSpaceOnUse">
+              <path d="M836.7 188.9A55.7 55.7 0 0 1 836.7 300.3Z"/><ellipse class="o-lens" data-o="os" cx="836.7" cy="244.6" rx="0" ry="55.7"/>
+            </clipPath>
+            <radialGradient id="dot-grad" cx=".42" cy=".38" r=".7">
+              <stop offset="0" stop-color="#ecc47a"/>
+              <stop offset="1" stop-color="#c48a33"/>
+            </radialGradient>
+          </defs>
+          <g class="logo">
+            <g class="word word--bio">
+              <use class="glyph" href="#g-B"/>
+              <use class="glyph" href="#g-I"/>
+              <g class="o o--bio">
+                <g class="o__rot">
+                  <g clip-path="url(#clip-phase-bio)">
+                    <image class="o__fill" href="/static/theme/art/o-fill.webp" x="779.2" y="187.1" width="115" height="115" preserveAspectRatio="none"/>
+                    <image class="o__fill o__fill--gold" href="/static/theme/art/o-fill-gold.webp" x="779.2" y="187.1" width="115" height="115" preserveAspectRatio="none"/>
+                  </g>
+                  <path class="o__hand" d="M836.7 187.8V301.4"/>
+                </g>
+                <circle class="o__ring" cx="836.7" cy="244.6" r="56.8"/>
+                <circle class="o__dot" cx="836.7" cy="244.6" r="6.3"/>
+              </g>
+            </g>
+            <g class="word word--os">
+              <g class="o o--os">
+                <g class="o__rot">
+                  <g clip-path="url(#clip-phase-os)">
+                    <image class="o__fill" href="/static/theme/art/o-fill.webp" x="779.2" y="187.1" width="115" height="115" preserveAspectRatio="none"/>
+                  </g>
+                  <path class="o__hand" d="M836.7 187.8V301.4"/>
+                </g>
+                <circle class="o__ring" cx="836.7" cy="244.6" r="56.8"/>
+                <circle class="o__dot" cx="836.7" cy="244.6" r="6.3"/>
+              </g>
+              <use class="glyph" href="#g-S"/>
+            </g>
+          </g>
+        </svg>
+      </div>
+    </div>
+
+    <canvas class="hero__gl" aria-hidden="true"></canvas>
+    <div class="hero__glint" aria-hidden="true"><span></span></div>
+
+    <div class="hero__captions" aria-hidden="true">
+      <p class="caption caption--bio"><span>humanity</span><span>nature</span><span>life</span></p>
+      <p class="caption caption--os"><span>computation</span><span>systems</span><span>machines</span></p>
+    </div>
+
+    <div class="hero__copy">
+      <h1 id="hero-title" class="sr-only">BIOS Hackathon: Bringing Innovation On-Stage</h1>
+      <p class="hero__actions">
+        <a class="btn btn--primary" href="/signin?next=/tracks">Register</a>
+        <a class="btn btn--secondary" href="/tracks">Explore Tracks</a>
+      </p>
+      <p class="hero__tagline"><span class="hero__paper">A hackathon where <em class="w-bio">life</em> and <em class="w-os">computation</em> meet.</span></p>
+      <p class="hero__meta"><span>BIOS V2</span><span aria-hidden="true">·</span><span>Thapar Institute, Patiala</span></p>
+    </div>
+    <p class="hero__cue" aria-hidden="true"><span>Scroll</span></p>
+  </div>
+</section>
+
+<!-- The content opens into the half of the page the receding world leaves behind. -->
+<div class="reading">
+
+  <!-- ============================== 01 BIO + OS: the idea, on both paths ============================== -->
+  <section class="section concept" id="concept" aria-labelledby="concept-title">
+    <header class="section__head">
+      <!-- which world you came in through (set by where you started scrolling) -->
+      <p class="path-note">
+        <span class="path-note__bio">You entered through <em class="w-bio">life</em>. <a href="#top">Return to the top</a> and start scrolling from the right to enter through <em class="w-os">computation</em>.</span>
+        <span class="path-note__os">You entered through <em class="w-os">computation</em>. <a href="#top">Return to the top</a> and start scrolling from the left to enter through <em class="w-bio">life</em>.</span>
+      </p>
+      <p class="eyebrow"><svg class="eyebrow__o" aria-hidden="true" focusable="false"><use href="#o-mini"/></svg><span>01</span> The idea</p>
+      <h2 id="concept-title" class="concept__title">
+        <span class="sr-only">BIO plus OS</span>
+        <svg class="wordmark-split" viewBox="664 176 628 140" aria-hidden="true" focusable="false">
+          <use class="wm-glyph" href="#g-B"/><use class="wm-glyph" href="#g-I"/>
+          <g class="wm-o wm-o--bio">
+            <image href="/static/theme/art/o-fill-gold.webp" x="779.2" y="187.1" width="115" height="115" preserveAspectRatio="none" clip-path="url(#clip-disc-bio)"/>
+            <circle cx="836.7" cy="244.6" r="56.8"/>
+          </g>
+          <path class="wm-plus" d="M987 224.6V264.6M967 244.6H1007"/>
+          <g class="wm-o wm-o--os">
+            <image href="/static/theme/art/o-fill.webp" x="1079.2" y="187.1" width="115" height="115" preserveAspectRatio="none" clip-path="url(#clip-disc-os)"/>
+            <circle cx="1136.7" cy="244.6" r="56.8"/>
+          </g>
+          <use class="wm-glyph" href="#g-S" x="300"/>
+        </svg>
+      </h2>
+      <p class="lede">In a computer, the <abbr title="Basic Input/Output System">BIOS</abbr> is the first thing that runs. Here it is the first point of contact, where <em class="w-bio">life</em> and <em class="w-os">computation</em> begin speaking to each other.</p>
+    </header>
+
+    <div class="concept__pair">
+      <article class="concept__side concept__side--bio">
+        <h3><span class="side-label">BIO</span> <span class="side-sub">the intelligence that grows</span></h3>
+        <p>Biology, humanity, nature, emotion and culture. These systems adapt, heal, remember and surprise. They evolved over millions of years without being designed.</p>
+      </article>
+      <article class="concept__side concept__side--os">
+        <h3><span class="side-label">OS</span> <span class="side-sub">the intelligence that is built</span></h3>
+        <p>Operating systems, algorithms, machines and engineering. These systems are specified, scheduled and run. They are designed line by line, then set loose.</p>
+      </article>
+    </div>
+    <p class="concept__close">Neither is enough on its own. <strong>BIO + OS = BIOS</strong>: a hackathon where the two build together.</p>
+  </section>
+
+  <!-- ============================== 02 the world you came in through (one of the two shows) ============================== -->
+  <section class="section world world--bio only-bio" id="bio" aria-labelledby="bio-title">
+    <header class="section__head">
+      <p class="eyebrow"><svg class="eyebrow__o" aria-hidden="true" focusable="false"><use href="#o-mini"/></svg><span>02</span> BIO</p>
+      <h2 id="bio-title">What <em class="w-bio">grows</em></h2>
+      <p class="lede">BIO is the living half of BIOS: cells and forests, people and the communities they make.</p>
+    </header>
+    <ul class="world__list">
+      <li><h3 class="world__term">Living systems</h3><p>Bodies, ecosystems and oceans: systems that heal, adapt and keep their balance without a manual.</p></li>
+      <li><h3 class="world__term">People</h3><p>Health, learning, language and culture shape the needs and habits behind every good idea.</p></li>
+      <li><h3 class="world__term">A shared planet</h3><p>Climate, water, food and energy: the problems that belong to everyone, and to the Sustainable Development Goals.</p></li>
+    </ul>
+    <p class="world__close">On the BIO side, every project begins with a question: <em>who is this for, and what should grow?</em></p>
+  </section>
+
+  <section class="section world world--os only-os" id="os" aria-labelledby="os-title">
+    <header class="section__head">
+      <p class="eyebrow"><svg class="eyebrow__o" aria-hidden="true" focusable="false"><use href="#o-mini"/></svg><span>02</span> OS</p>
+      <h2 id="os-title">What is <em class="w-os">built</em></h2>
+      <p class="lede">OS is the engineered half of BIOS: systems that turn an idea into something specified, scheduled, tested and shipped.</p>
+    </header>
+    <ul class="world__list">
+      <li><h3 class="world__term">Systems</h3><p>Operating systems, networks and infrastructure: the layers everything else quietly stands on.</p></li>
+      <li><h3 class="world__term">Algorithms</h3><p>Data, models and AI support learning, prediction and decisions at scale.</p></li>
+      <li><h3 class="world__term">Machines</h3><p>Devices, robots and secure software: code that meets the physical world, and has to be trusted there.</p></li>
+    </ul>
+    <p class="world__close">On the OS side, every project ends with an answer: <em>make it run, make it hold, and put it on stage.</em></p>
+  </section>
+
+  <!-- ============================== 03 JOIN ============================== -->
+  <section class="section cta" id="register" aria-labelledby="cta-title">
+    <div class="cta__hands" aria-hidden="true">
+      <span class="cta__hand cta__hand--bio"></span>
+      <svg class="cta__point" viewBox="-30 -30 60 60" focusable="false">
+        <circle class="cta__ring" r="26"/>
+        <circle class="cta__orb" r="4.4"/>
+      </svg>
+      <span class="cta__hand cta__hand--os"></span>
+    </div>
+    <p class="eyebrow"><svg class="eyebrow__o" aria-hidden="true" focusable="false"><use href="#o-mini"/></svg><span>03</span> Join</p>
+    <h2 id="cta-title">Meet at the <em class="w-mid">intersection.</em></h2>
+    <p class="cta__text">BIOS is the flagship hackathon of the CSED Department at Thapar Institute of Engineering &amp; Technology. Teams take an idea from its first sketch to a working prototype on stage.</p>
+    <p class="cta__actions">
+      <a class="btn btn--primary btn--lg" href="/signin?next=/tracks">Register Now</a>
+      <a class="btn btn--secondary btn--lg" href="/tracks">Explore Tracks</a>
+    </p>
+    <p class="cta__mentor">Would you rather guide a team? <button type="button" class="btn-link" data-mentor-signup-trigger>Become a Mentor</button></p>
+  </section>
+</div>
+
+<div id="mentor-signup-modal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="mentor-modal-title">
+  <div class="modal__dialog">
+    <button type="button" id="mentor-modal-close" class="modal__close" aria-label="Close">
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#i-close"/></svg>
+    </button>
+    <p class="eyebrow"><svg class="eyebrow__o" aria-hidden="true" focusable="false"><use href="#o-mini"/></svg><span>Mentors</span></p>
+    <h3 id="mentor-modal-title">Interested in mentoring BIOS?</h3>
+    <p>Mentors help teams unlock roadblocks, refine strategies, and ship better prototypes. Here&rsquo;s what we expect:</p>
+    <div class="grid grid--2">
+      <div>
+        <h4>Minimum Requirements</h4>
+        <ul class="list-dots">
+          <li>Solid track record in tech, product, research, or entrepreneurship.</li>
+          <li>Availability for at least two syncs during the build sprint.</li>
+          <li>Comfortable guiding teams asynchronously on Discord or email.</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Responsibilities</h4>
+        <ul class="list-dots">
+          <li>Review team direction and offer tactical feedback.</li>
+          <li>Share resources, frameworks, or connections that accelerate execution.</li>
+          <li>Keep organisers informed if any assigned team requires extra support.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="actions">
+      <button type="button" id="mentor-modal-dismiss" class="btn btn--secondary">Not ready yet</button>
+      <a href="/mentors/register" class="btn btn--primary">Proceed</a>
+    </div>
+  </div>
+</div>
+
+    </main>
+
+
+<footer class="site-footer home-footer">
+  <div class="site-footer__inner">
+    <svg class="site-footer__logo" viewBox="0 0 322 162" width="118" height="59" aria-hidden="true" focusable="false"><use href="#bios-logo" width="322" height="162"/></svg>
+    <div>
+      <p class="site-footer__small">&copy;  BIOS Hackathon • Made with love for innovators</p>
+    </div>
+    <ul class="site-footer__links" aria-label="Community">
+      <li><a href="https://discord.gg/SsVuHQzX8" target="_blank" rel="noopener">Discord</a></li>
+      <li><a href="https://www.instagram.com/bioshackathon" target="_blank" rel="noopener">Instagram</a></li>
+    </ul>
+    <div class="home-footer__devfolio" role="group" aria-label="Apply through Devfolio">
+      <a class="home-footer__devfolio-brand" href="https://devfolio.co" target="_blank" rel="sponsored noopener">
+        <span>Hackathon platform partner</span>
+        <img
+          src="/static/theme/art/partners/devfolio-lockup-dark.svg?v=9e682be5a4"
+          alt="DEVFOLIO LOGO"
+          width="619"
+          height="129"
+          decoding="async"
+        >
+      </a>
+      <div
+        class="apply-button"
+        data-hackathon-slug="biosv2"
+        data-button-theme="light"
+        style="height: 44px; width: 312px"
+      ></div>
+    </div>
+  </div>
+</footer>
+
+
+
+<script nonce="rGZXJWwL9TatxzYPM3HZuzGh">
+    (function () {
+        const openButtons = document.querySelectorAll('[data-mentor-signup-trigger]');
+        const modal = document.getElementById('mentor-signup-modal');
+        const closeBtn = document.getElementById('mentor-modal-close');
+        const dismissBtn = document.getElementById('mentor-modal-dismiss');
+        if (!openButtons.length || !modal) return;
+        let opener = null;
+
+        const closeModal = () => {
+            modal.classList.add('hidden');
+            document.body.classList.remove('overflow-hidden');
+            if (opener) opener.focus();
+        };
+
+        openButtons.forEach((button) => {
+            button.addEventListener('click', () => {
+                opener = button;
+                modal.classList.remove('hidden');
+                document.body.classList.add('overflow-hidden');
+                if (closeBtn) closeBtn.focus();
+            });
+        });
+
+        [closeBtn, dismissBtn].forEach(btn => {
+            if (!btn) return;
+            btn.addEventListener('click', closeModal);
+        });
+
+        modal.addEventListener('click', (event) => {
+            if (event.target === modal) {
+                closeModal();
+            }
+        });
+
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape' && !modal.classList.contains('hidden')) {
+                closeModal();
+            }
+        });
+    })();
+</script>
+<script nonce="rGZXJWwL9TatxzYPM3HZuzGh" defer async src="https://apply.devfolio.co/v2/sdk.js"></script>
+
+</body>
+
+</html>

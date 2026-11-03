@@ -800,3 +800,215 @@ a {
     transform: none;
   }
 }
+
+
+/* Scroll-driven portfolio sequence: the initial frame remains the supplied still. */
+.portfolio-hero {
+  height: 220vh;
+  height: 220svh;
+  min-height: 0;
+  overflow: visible;
+}
+
+.portfolio-scene {
+  position: sticky;
+  top: 0;
+  isolation: isolate;
+  height: 100vh;
+  height: 100svh;
+  overflow: hidden;
+  --background-drift: 0px;
+  --background-zoom: 1;
+  --human-drift: 0px;
+  --human-zoom: 1;
+  --android-drift: 0px;
+  --android-zoom: 1;
+  --copy-lift: 0px;
+  --copy-zoom: 1;
+  --role-zoom: 1;
+  --touch-zoom: 1;
+  --star-turn: 0deg;
+}
+
+.portfolio-art--background {
+  transform: translate3d(0, var(--background-drift), 0) scale(var(--background-zoom));
+  transform-origin: center center;
+  will-change: transform;
+}
+
+.portfolio-art--human {
+  transform: translate3d(var(--human-drift), 0, 0) scale(var(--human-zoom));
+  transform-origin: 68% 50%;
+  will-change: transform;
+}
+
+.portfolio-art--android {
+  transform: translate3d(var(--android-drift), 0, 0) scaleX(0.74) scaleY(1.25) scale(var(--android-zoom));
+  transform-origin: 28% 52%;
+  will-change: transform;
+}
+
+.portfolio-touchpoint {
+  scale: var(--touch-zoom);
+  transform-origin: center;
+  will-change: scale, opacity;
+}
+
+.hero-copy {
+  transform: translate3d(-50%, var(--copy-lift), 0) scale(var(--copy-zoom));
+  transform-origin: center top;
+  will-change: transform;
+}
+
+.copy-star {
+  rotate: var(--star-turn);
+  transform-origin: center;
+}
+
+.hero-role {
+  font-size: clamp(9px, 0.9vw, 11px);
+  letter-spacing: 0.15em;
+  transform: scale(var(--role-zoom, 1));
+  transform-origin: center;
+}
+
+.portfolio-finale {
+  position: relative;
+  display: grid;
+  min-height: min(82svh, 760px);
+  place-items: center;
+  overflow: hidden;
+  padding: clamp(56px, 10vh, 100px) 24px;
+  background:
+    radial-gradient(ellipse at 50% 15%, rgba(255, 252, 241, 0.96), transparent 55%),
+    linear-gradient(180deg, #f3e8d5 0%, #f8efdf 100%);
+  text-align: center;
+}
+
+.portfolio-finale::before,
+.portfolio-finale::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: min(82vw, 760px);
+  aspect-ratio: 1;
+  border: 1px solid rgba(155, 113, 53, 0.11);
+  border-radius: 50%;
+  content: "";
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+}
+
+.portfolio-finale::after {
+  width: min(62vw, 560px);
+  border-color: rgba(26, 62, 114, 0.09);
+}
+
+.finale-ornament {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  color: var(--gold-deep);
+  font-size: 20px;
+  transform: translateX(-50%);
+}
+
+.finale-copy {
+  position: relative;
+  z-index: 1;
+  width: min(680px, 100%);
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 700ms ease, transform 700ms cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+.portfolio-finale.is-visible .finale-copy {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.portfolio-finale .hero-role {
+  margin: 0 0 18px;
+  color: var(--gold-deep);
+}
+
+.portfolio-finale h2 {
+  margin: 0;
+  color: var(--ink);
+  font-family: var(--font-display);
+  font-size: clamp(34px, 6vw, 64px);
+  font-weight: 400;
+  line-height: 0.98;
+}
+
+.finale-description {
+  max-width: 600px;
+  margin: 18px auto 0;
+  color: var(--ink-soft);
+  font-family: var(--font-display);
+  font-size: clamp(17px, 2.1vw, 22px);
+  line-height: 1.25;
+}
+
+.portfolio-finale .hero-actions {
+  margin-top: 24px;
+}
+
+@media (max-width: 640px) {
+  .hero-role {
+    font-size: clamp(8.5px, 2.35vw, 9.5px);
+    letter-spacing: 0.09em;
+  }
+
+  .portfolio-finale {
+    min-height: 72svh;
+    padding: 56px 20px;
+  }
+
+  .portfolio-finale::before {
+    width: 125vw;
+  }
+
+  .portfolio-finale::after {
+    width: 96vw;
+  }
+
+  .finale-ornament {
+    top: 10%;
+  }
+
+  .portfolio-finale .hero-role {
+    margin-bottom: 14px;
+  }
+
+  .finale-description {
+    margin-top: 14px;
+    font-size: 18px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .portfolio-hero {
+    height: auto;
+    min-height: 100svh;
+  }
+
+  .portfolio-scene {
+    position: relative;
+    height: 100vh;
+    height: 100svh;
+  }
+
+  .portfolio-art--background,
+  .portfolio-art--human,
+  .portfolio-art--android,
+  .hero-copy {
+    will-change: auto;
+  }
+
+  .portfolio-finale .finale-copy {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}

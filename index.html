@@ -15,56 +15,71 @@
   <body class="portfolio-home">
     <a class="skip-link" href="#hero-copy">Skip to content</a>
     <main id="main-content">
-      <section class="portfolio-hero" id="top" aria-labelledby="hero-title">
-        <div class="portfolio-paper" aria-hidden="true"></div>
+      <section class="portfolio-hero" id="top" aria-label="Mayank Kamdi portfolio hero">
+        <div class="portfolio-scene" data-scroll-scene>
+          <div class="portfolio-paper" aria-hidden="true"></div>
 
-        <div class="portfolio-stage" aria-hidden="false">
-          <div class="portfolio-frame" role="img" aria-label="An illustrated human figure among flowering vines and a celestial blue android reach toward each other across a golden point of light.">
-            <img class="portfolio-art portfolio-art--background" src="/static/portfolio/celestial-garden.png" alt="" width="1672" height="941" fetchpriority="high" decoding="async" />
-            <img class="portfolio-art portfolio-art--human" src="/static/portfolio/mayank-human.png" alt="" width="1409" height="1117" decoding="async" />
-            <img class="portfolio-art portfolio-art--android" src="/static/portfolio/celestial-android.png" alt="" width="1337" height="1176" decoding="async" />
-            <span class="portfolio-touchpoint" aria-hidden="true"></span>
+          <div class="portfolio-stage" aria-hidden="false">
+            <div class="portfolio-frame" role="img" aria-label="An illustrated human figure among flowering vines and a celestial blue android reach toward each other across a golden point of light.">
+              <img class="portfolio-art portfolio-art--background" src="/static/portfolio/celestial-garden.png" alt="" width="1672" height="941" fetchpriority="high" decoding="async" />
+              <img class="portfolio-art portfolio-art--human" src="/static/portfolio/mayank-human.png" alt="" width="1409" height="1117" decoding="async" />
+              <img class="portfolio-art portfolio-art--android" src="/static/portfolio/celestial-android.png" alt="" width="1337" height="1176" decoding="async" />
+              <span class="portfolio-touchpoint" aria-hidden="true"></span>
+            </div>
+          </div>
+
+          <div class="portfolio-content">
+            <header class="portfolio-header">
+              <a class="portfolio-brand" href="/" aria-label="Mayank Kamdi home">
+                <span class="brand-star" aria-hidden="true">✦</span>
+                <span class="brand-name">M A Y A N K . K A M D I</span>
+              </a>
+
+              <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Open navigation menu">
+                <span></span><span></span>
+              </button>
+
+              <nav class="primary-navigation" id="primary-navigation" aria-label="Primary navigation">
+                <ul>
+                  <li class="is-current"><a href="/" aria-current="page">Home</a></li>
+                  <li><a href="/guide">About</a></li>
+                  <li><a href="/tracks">Projects</a></li>
+                  <li><a href="/history">Experience</a></li>
+                  <li><a href="/init">Journey</a></li>
+                  <li><a href="/announcements">Blog</a></li>
+                  <li><a href="/mentors/register">Contact</a></li>
+                </ul>
+              </nav>
+
+              <a class="connect-link" href="/mentors/register">Let’s Connect <span aria-hidden="true">→</span></a>
+              <span class="header-compass" aria-hidden="true">✦</span>
+            </header>
+
+            <div class="hero-copy" id="hero-copy" tabindex="-1">
+              <span class="copy-star" aria-hidden="true">✦</span>
+              <p class="hero-eyebrow"><span>Build</span><b aria-hidden="true">✦</b><span>Learn</span><b aria-hidden="true">✦</b><span>Explore</span><b aria-hidden="true">✦</b><span>Create</span></p>
+              <h1 id="hero-title" aria-label="Mayank Kamdi"><span class="title-first">Mayank</span><span class="title-last">Kamdi</span></h1>
+              <p class="hero-role">AI Engineer <i aria-hidden="true">✦</i> Builder <i aria-hidden="true">✦</i> Creative Technologist</p>
+              <p class="hero-tagline">Where Human Imagination<br />Meets Artificial Intelligence.</p>
+              <p class="hero-description">I build intelligent systems, explore emerging technologies,<br class="desktop-break" /> and turn ambitious ideas into meaningful digital experiences.</p>
+              <div class="hero-actions">
+                <a class="button button--primary" href="/tracks">Explore My Work <span aria-hidden="true">→</span></a>
+                <a class="button button--secondary" href="/guide">About Me</a>
+              </div>
+            </div>
           </div>
         </div>
+      </section>
 
-        <div class="portfolio-content">
-          <header class="portfolio-header">
-            <a class="portfolio-brand" href="/" aria-label="Mayank Kamdi home">
-              <span class="brand-star" aria-hidden="true">✦</span>
-              <span class="brand-name">M A Y A N K . K A M D I</span>
-            </a>
-
-            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Open navigation menu">
-              <span></span><span></span>
-            </button>
-
-            <nav class="primary-navigation" id="primary-navigation" aria-label="Primary navigation">
-              <ul>
-                <li class="is-current"><a href="/" aria-current="page">Home</a></li>
-                <li><a href="/guide">About</a></li>
-                <li><a href="/tracks">Projects</a></li>
-                <li><a href="/history">Experience</a></li>
-                <li><a href="/init">Journey</a></li>
-                <li><a href="/announcements">Blog</a></li>
-                <li><a href="/mentors/register">Contact</a></li>
-              </ul>
-            </nav>
-
-            <a class="connect-link" href="/mentors/register">Let’s Connect <span aria-hidden="true">→</span></a>
-            <span class="header-compass" aria-hidden="true">✦</span>
-          </header>
-
-          <div class="hero-copy" id="hero-copy" tabindex="-1">
-            <span class="copy-star" aria-hidden="true">✦</span>
-            <p class="hero-eyebrow"><span>Build</span><b aria-hidden="true">✦</b><span>Learn</span><b aria-hidden="true">✦</b><span>Explore</span><b aria-hidden="true">✦</b><span>Create</span></p>
-            <h1 id="hero-title" aria-label="Mayank Kamdi"><span class="title-first">Mayank</span><span class="title-last">Kamdi</span></h1>
-            <p class="hero-role">AI Engineer <i aria-hidden="true">✦</i> Builder <i aria-hidden="true">✦</i> Creative Technologist</p>
-            <p class="hero-tagline">Where Human Imagination<br />Meets Artificial Intelligence.</p>
-            <p class="hero-description">I build intelligent systems, explore emerging technologies,<br class="desktop-break" /> and turn ambitious ideas into meaningful digital experiences.</p>
-            <div class="hero-actions">
-              <a class="button button--primary" href="/tracks">Explore My Work <span aria-hidden="true">→</span></a>
-              <a class="button button--secondary" href="/guide">About Me</a>
-            </div>
+      <section class="portfolio-finale" aria-labelledby="finale-title">
+        <div class="finale-ornament" aria-hidden="true">✦</div>
+        <div class="finale-copy">
+          <p class="hero-role">AI Engineer <i aria-hidden="true">✦</i> Builder <i aria-hidden="true">✦</i> Creative Technologist</p>
+          <h2 id="finale-title">Where Human Imagination<br />Meets Artificial Intelligence.</h2>
+          <p class="finale-description">I build intelligent systems, explore emerging technologies, and turn ambitious ideas into meaningful digital experiences.</p>
+          <div class="hero-actions">
+            <a class="button button--primary" href="/tracks">Explore My Work <span aria-hidden="true">→</span></a>
+            <a class="button button--secondary" href="/guide">About Me</a>
           </div>
         </div>
       </section>

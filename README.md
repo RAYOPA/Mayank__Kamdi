@@ -1,6 +1,8 @@
-# BIOS Hackathon — Interactive Website Recreation
+# Mayank Kamdi Portfolio and BIOS Hackathon
 
-A standalone, multi-page Vite recreation of the public BIOS Hackathon website at https://bios.notyouraverage.xyz/. It includes the source-matched scroll-driven hero, responsive pages and interactions, sign-in/access gates, and localized first-party static assets. The route manifest is at `public/manus-routes.json`.
+The root `/` is an accessible Mayank Kamdi portfolio hero based on the supplied parchment-and-celestial reference. The illustration layers, fonts, logo mark, CSS and JavaScript are served from local project assets. The remaining route set preserves the public BIOS Hackathon pages, observed access gates and interactions; its declarations are in `public/manus-routes.json`.
+
+Until separate portfolio page destinations or contact details are supplied, the visible portfolio navigation and calls to action point to existing local BIOS routes. No private account content or personal email address is fabricated.
 
 ## Development
 

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Mayank Kamdi compass star">
+  <rect width="128" height="128" rx="26" fill="#f8efdf"/>
+  <circle cx="64" cy="64" r="45" fill="none" stroke="#1a3e72" stroke-opacity=".32" stroke-width="1.5"/>
+  <path d="M64 18 72 56 110 64 72 72 64 110 56 72 18 64 56 56Z" fill="#c69a48"/>
+  <path d="M64 35v58M35 64h58" fill="none" stroke="#9b7135" stroke-opacity=".58" stroke-width="1"/>
+  <circle cx="64" cy="64" r="5" fill="#1a3e72"/>
+</svg>

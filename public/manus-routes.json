@@ -2,7 +2,7 @@
   "routes": [
     {
       "path": "/",
-      "title": "Mayank Kamdi — AI Engineer & Creative Technologist"
+      "title": "BIOS Hackathon - Bringing Innovation On-Stage"
     },
     {
       "path": "/tracks",
@@ -115,6 +115,10 @@
     {
       "path": "/mentors/directory",
       "title": "Mentor Directory - BIOS Hackathon"
+    },
+    {
+      "path": "/portfolio",
+      "title": "Mayank Kamdi Portfolio"
     }
   ]
 }

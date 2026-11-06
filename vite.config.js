@@ -6,6 +6,7 @@ import { fileURLToPath } from 'node:url';
 const root = resolve(fileURLToPath(new URL('.', import.meta.url)));
 const pages = {
   home: 'index.html',
+  portfolio: 'portfolio/index.html',
   tracks: 'tracks/index.html',
   guide: 'guide/index.html',
   announcements: 'announcements/index.html',

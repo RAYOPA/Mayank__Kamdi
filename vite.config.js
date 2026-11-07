@@ -63,6 +63,9 @@ function directoryIndexRoutes() {
 
 export default defineConfig({
   plugins: [directoryIndexRoutes()],
+  server: {
+    allowedHosts: ['3000-iuvqi8ydls30ooyklz6pz-c4b9a7bb.sg2.manus.computer'],
+  },
   build: {
     rollupOptions: {
       input: Object.fromEntries(
